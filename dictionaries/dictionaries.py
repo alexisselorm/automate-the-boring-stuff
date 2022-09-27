@@ -32,3 +32,28 @@ for char in message.lower():
     count[char] += 1
 
 print(count)
+
+
+# Data Structures
+theBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
+            'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ',
+            'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
+
+theBoard['top-L'] = 'X'
+theBoard['top-M'] = 'X'
+theBoard['top-R'] = 'X'
+theBoard['mid-L'] = 'O'
+theBoard['mid-M'] = 'O'
+theBoard['low-R'] = 'O'
+
+
+def printBoard(board):
+    print(board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'])
+    print('-----')
+    print(board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'])
+    print('-----')
+    print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
+    print('-----')
+
+
+printBoard(theBoard)
