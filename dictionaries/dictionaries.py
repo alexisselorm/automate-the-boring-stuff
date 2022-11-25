@@ -35,25 +35,32 @@ print(count)
 
 
 # Data Structures
+
+allCats = [{"name":"Zophie","age":7,"color":"gray"},
+           {"name":"Pooka","age":5,"color":"black"},
+           {"name":"Fat-tail","age":3,"color":"gray"},
+           {"name":"Zizzies","age":-1,"color":"orange"},
+           ]
+
 theBoard = {'top-L': ' ', 'top-M': ' ', 'top-R': ' ',
             'mid-L': ' ', 'mid-M': ' ', 'mid-R': ' ',
             'low-L': ' ', 'low-M': ' ', 'low-R': ' '}
 
-theBoard['top-L'] = 'X'
-theBoard['top-M'] = 'X'
-theBoard['top-R'] = 'X'
-theBoard['mid-L'] = 'O'
-theBoard['mid-M'] = 'O'
-theBoard['low-R'] = 'O'
+theBoard['top-L'] = ' X '
+theBoard['top-M'] = ' X '
+theBoard['top-R'] = ' X '
+theBoard['mid-L'] = ' O '
+theBoard['mid-M'] = ' O '
+theBoard['low-R'] = ' O '
 
 
 def printBoard(board):
     print(board['top-L'] + '|' + board['top-M'] + '|' + board['top-R'])
-    print('-----')
+    print('----------')
     print(board['mid-L'] + '|' + board['mid-M'] + '|' + board['mid-R'])
-    print('-----')
+    print('----------')
     print(board['low-L'] + '|' + board['low-M'] + '|' + board['low-R'])
-    print('-----')
+    print('----------')
 
 
 printBoard(theBoard)
