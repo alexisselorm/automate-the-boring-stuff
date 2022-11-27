@@ -52,3 +52,10 @@ print('      My name is pop               '.rstrip())
 
 # Replace string method
 print('My name is pop'.replace('pop', 'Alexis'))
+
+# String formatting
+name = "Alexis"
+place = "Main street"
+time="6 pm"
+food="turnips"
+print(f"Hello {name}, you have been invited to a party at {place},at {time},please bring {food}")
